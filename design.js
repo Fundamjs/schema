@@ -111,12 +111,21 @@ const schema = {
             },
             // 三种配置方式
             // 配置触发器（直接选取触发器），串行
-            onMount: [
-              {
-                // observe: [], // TODO 响应式监听的对象？
-                action: 'LOAD_QUERY',
-              }
-            ],
+            onMount: {
+              // observe: [], // TODO 响应式监听的对象？
+              triggers: [
+                {
+                  trigger: 'LOAD_QUERY',
+                  params: []
+                },
+                {
+                  // 可以直接生成代码
+                  exec: async function () {
+                    // TODO ...  多个 action 串行？
+                  }
+                }
+              ]
+            },
             // 配置代码（表单生成、或者打开webstorm等手撸）
             // onMount: async function () {
             //   // 全局变量、常量使用示例

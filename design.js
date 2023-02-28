@@ -5,9 +5,11 @@
  * 3. 搭建系统（@fundam/dashboard）：搭建器
  * 4. 编辑器 - PC网页（@fundam/editor-pc-web-react）：控制编辑器的渲染区
  * 5. 编辑器 - 手机网页（@fundam/editor-mobile-web-react）：控制编辑器的渲染区
- * 6. 编辑器 - 主体（@fundam/editor）：用于渲染整个编辑器，包含拖拽、左右控制区、deeplink/命令行跳转编辑器、区分各个环境、接口校验配置、表单项校验配置、一键生成服务端校验规则等
+ * 6. 编辑器 - 主体（@fundam/editor）：用于渲染整个编辑器，包含拖拽、左右控制区、deeplink/命令行跳转编辑器、区分各个环境、接口校验配置、
+ *                                  表单项校验配置、一键生成服务端校验规则、支持传入三方、本地组件可搭建、支持纯json模式（方便后端存储、返回）等
  * 7. react通用逻辑包（@fundam/react）：包含react相关的通用逻辑
  * 8. 内置ui - antd（@fundam/antd）：包含antd所有组件，并支持搭建
+ * 9. 渲染器 - render（@fundam/render）：通过schema渲染页面、组件，支持注入三方/本地组件、支持scope、全局方法、变量/常量
  *
  * 原则
  * 1. 组件驱动：这里的"组件"可以是一个完整的应用程序、页面、UI集合、后端服务、action/action集合等
